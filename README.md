@@ -1,6 +1,8 @@
 # Slider :watermelon:
 
-Simple slider to practice my JavaScript
+## work. in. progress.
+
+Simple slider to practice CSS Animations and JavaScript
 
 ---
 

@@ -7,3 +7,61 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helivetica", "Arial", sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    z-index: 3;
+}
+
+.block_heading {
+    margin: 1rem 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+#slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.block_slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 300ms ease;
+
+    &.active {
+        transform: translateX(0);
+    }
+}
+
+.block_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
